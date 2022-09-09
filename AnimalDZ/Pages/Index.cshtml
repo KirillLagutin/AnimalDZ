@@ -1,0 +1,48 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Animal";
+}
+
+<form method="post">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Sound</th>
+            </tr>
+        </thead>
+
+        @if (Model.animals2.Count < 1)
+        {
+            @foreach (var item in Model.animals)
+            {
+                @for (int i = 0; i < item.Key.Count; i++)
+                {
+                    <tr>
+                        <td>@item.Key[i]</td>
+                        <td>@item.Value[i]</td>
+                    </tr>
+                }
+            }
+        }
+        else
+        {
+            @foreach (var item in Model.animals2)
+            {
+                <tr>
+                    <td>@item.Key</td>
+                    <td>@item.Value</td>
+                </tr>
+            }
+        }
+    </table>
+
+    <input type="submit" value="Save File" asp-page-handler="SaveFile"/>
+</form>
+
+<form asp-action="LoadFile" method="post" enctype="multipart/form-data">
+    <input type="file" name="uploadedFile"/>
+    <br />
+    <input type="submit" value="Load" asp-page-handler="LoadFile"/>
+</form>

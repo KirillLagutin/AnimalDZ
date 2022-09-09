@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32630.192
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnimalDZ", "AnimalDZ\AnimalDZ.csproj", "{2EADBA18-436D-4356-9609-CD04F717C31E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2EADBA18-436D-4356-9609-CD04F717C31E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2EADBA18-436D-4356-9609-CD04F717C31E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2EADBA18-436D-4356-9609-CD04F717C31E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2EADBA18-436D-4356-9609-CD04F717C31E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DACD006E-DE3A-41E4-A2FD-E2B7BB42E081}
+	EndGlobalSection
+EndGlobal
